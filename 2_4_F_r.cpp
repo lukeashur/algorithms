@@ -3,7 +3,7 @@ using namespace std;
 
 int F_r(int n) {
     if (n <= 2) {
-    return 1;
+        return 1;
     }
     return n * F_r(n - 1) - F_r(n - 2);
 }

@@ -3,7 +3,7 @@ using namespace std;
 
 int F_i(int n) {
 	if (n <= 2) {
-	return 1;
+		return 1;
 	}
 
 	int f_n_minus_1 = 1, f_n_minus_2 = 1, f_n = 0;
