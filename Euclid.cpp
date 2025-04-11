@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 // Function to compute GCD using Euclid's algorithm (by repeated subtraction)

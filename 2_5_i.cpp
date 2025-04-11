@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 int F_i(int n) {
