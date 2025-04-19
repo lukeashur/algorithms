@@ -43,7 +43,6 @@ public:
             else
                 high = middle - 1; // Move to/search upper bound
         }
-
         return -1; // Element not found
     }
 };
@@ -76,6 +75,5 @@ int main()
     else {
         cout << "Value " << searchValue << " not found in the vector." << endl;
     }
-
     return 0;
 }

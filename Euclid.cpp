@@ -9,9 +9,8 @@ int computeGCD(int a, int b) {
 
     while (n != 0) {
         if (m < n) {
-            // Swap m and n
             int temp = m;
-            m = n;
+            m = n; // Swap m and n
             n = temp;
         }
 
@@ -19,17 +18,21 @@ int computeGCD(int a, int b) {
         m = n;
         n = r;
     }
-
     return m; // GCD found
 }
 
 int main() {
     int a, b;
-    cout << "Enter two non-negative integers a and b: ";
+    cout << "Enter two non-negative integers (a and b): ";
     cin >> a >> b;
 
     if (a < 0 || b < 0) {
         cout << "Please enter only non-negative integers." << endl;
+        return 1;
+    }
+
+    if (a == 0 && b == 0) {
+        cout << "GCD is undefined when both numbers are zero." << endl;
         return 1;
     }
 
