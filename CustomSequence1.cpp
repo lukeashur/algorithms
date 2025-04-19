@@ -2,6 +2,15 @@
 
 using namespace std;
 
+// Generalized Factorial-Fibonacci Hybrid
+
+int F_r(int n) {
+    if (n <= 2) {
+        return 1;
+    }
+    return n * F_r(n - 1) - F_r(n - 2);
+}
+
 int F_i(int n) {
 	if (n <= 2) {
 		return 1;
@@ -19,7 +28,7 @@ int F_i(int n) {
 
 int main() {
 	for (int n = 1; n <= 5; n++) {
-		cout << "f(" << n << ") = " << F_i(n) << endl;
+		cout << "f_r(" << n << ") = " << F_r(n) << "\t f_i(" << n << ") = " << F_i(n) << endl;
 	}
 	return 0;
 }
