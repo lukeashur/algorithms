@@ -2,8 +2,6 @@
 
 using namespace std;
 
-// Generalized Factorial-Fibonacci Hybrid
-
 int F_r(int n) {
     if (n <= 2) {
         return 1;

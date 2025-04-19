@@ -22,7 +22,6 @@ void hanoi(int n, char source, char auxiliary, char destination) {
 int main() {
     
     int n;
-    
     cout << "Enter the number of disks: ";
     cin >> n;
 
